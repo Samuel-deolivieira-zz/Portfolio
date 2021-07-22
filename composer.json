@@ -1,0 +1,11 @@
+{
+    "name": "scrav/portfolio",
+    "require": {
+        "altorouter/altorouter": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App"
+        }
+    }
+}
