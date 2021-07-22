@@ -14,8 +14,6 @@ $router->map('GET', '/contact', function() {
 
 $match = $router->match();
 
-var_dump($match);
-
 if( is_array($match) && is_callable( $match['target'] ) ) {
 	call_user_func_array( $match['target'], $match['params'] ); 
 } else {
