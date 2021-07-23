@@ -8,7 +8,8 @@ $router->map('GET', '/', function() {
 $router->map('GET', '/home', function() {
     require __DIR__ . '/../view/home.php';
 });
-$router->map('GET', '/contact', function() {
+$router->map('GET', '/contact/[i:id]', function($params) {
+    var_dump($params);
     require __DIR__ . '/../view/contact.php';
 });
 
